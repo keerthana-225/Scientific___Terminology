@@ -1,0 +1,64 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #f7f9fc, #eef2f7);
+  color: #1f2937;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 8px 20px rgba(99, 102, 241, 0.35));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 8px 20px rgba(14, 165, 233, 0.4));
+}
+
+/* Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 18s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+  margin: 1.5em auto;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Subtle text */
+.read-the-docs {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
